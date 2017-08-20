@@ -1,5 +1,10 @@
 let answer = document.getElementById('answer');
 let attempt = document.getElementById('attempt');
+let code = document.getElementById('code');
+let message = document.getElementById('message');
+let results = document.getElementById('results');
+let guessingDiv = document.getElementById('guessing-div');
+let replayDiv = document.getElementById('replay-div');
 
 function guess() {
     let input = document.getElementById('user-guess');
@@ -38,7 +43,7 @@ function setHiddenFields() {
 }
 
 function setMessage(msg) {
-  $("#message").innerHTML = msg;
+  message.innerHTML = msg;
 }
 
 function validateInput(length) {
@@ -66,7 +71,7 @@ function getResults(input) {
   }
   html += '</div></div>';
 
-  $("#results").innerHTML += html;
+  results.innerHTML += html;
 
   if (charCorrect == 4) {
     return true;
@@ -75,15 +80,15 @@ function getResults(input) {
 }
 
 function showAnswer(won) {
-  $("#code").innerHTML(answer);
+  code.innerHTML(answer);
   if (won) {
-    $("#code").className += " success";
+    code.className += " success";
   } else {
-    $("#code").className += " failure";
+    code.className += " failure";
   }
 }
 
 function showReplay() {
-  $("#guessing-div").style = "display: none";
-  $("#replay-div").style = "disply: block";
+  guessingDiv.style = "display: none";
+  replayDiv.style = "disply: block";
 }
