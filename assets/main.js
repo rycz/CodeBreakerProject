@@ -46,8 +46,8 @@ function setMessage(msg) {
   message.innerHTML = msg;
 }
 
-function validateInput(length) {
-  if (length == 4) {
+function validateInput(input) {
+  if (input.length == 4) {
     return true;
   } else {
     setMessage("Guesses must be exactly 4 characters long.");
@@ -90,5 +90,5 @@ function showAnswer(won) {
 
 function showReplay() {
   guessingDiv.style = "display: none";
-  replayDiv.style = "disply: block";
+  replayDiv.style = "display: block";
 }
