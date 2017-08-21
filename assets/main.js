@@ -1,5 +1,5 @@
-let answer = document.getElementById('answer');
-let attempt = document.getElementById('attempt');
+let answer = document.getElementById('answer').value;
+let attempt = document.getElementById('attempt').value;
 let code = document.getElementById('code');
 let message = document.getElementById('message');
 let results = document.getElementById('results');
@@ -7,14 +7,14 @@ let guessingDiv = document.getElementById('guessing-div');
 let replayDiv = document.getElementById('replay-div');
 
 function guess() {
-    let input = document.getElementById('user-guess');
+    let input = document.getElementById('user-guess').value;
 
     //add functionality to guess function here
     if (answer =='' || attempt == '') {
       setHiddenFields();
     }
 
-    if (!validateInput(input.value)) {
+    if (!validateInput(input)) {
       return false;
     } else {
       attempt++;
