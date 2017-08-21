@@ -1,5 +1,4 @@
 .code {
-<<<<<<< HEAD
   font-size: 50px;
   padding-left: 70px;
 }
@@ -19,16 +18,3 @@
 .message {
   font-weight: bold;
 }
-=======
-    font-size: 50px;
-    padding-left: 70px;
-}
-
-.failure {
-    color: red;
-}
-
-.success {
-    color: green;
-}
->>>>>>> 6b19da325dad25cb99aa3844afa75da68c40350d
