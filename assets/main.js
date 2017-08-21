@@ -80,7 +80,7 @@ function getResults(input) {
 }
 
 function showAnswer(won) {
-  code.innerHTML(answer.value);
+  code.innerHTML = answer.value;
   if (won) {
     code.className += " success";
   } else {
