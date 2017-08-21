@@ -1,4 +1,4 @@
-let answer = document.getElementById('answer').;
+let answer = document.getElementById('answer');
 let attempt = document.getElementById('attempt');
 let code = document.getElementById('code');
 let message = document.getElementById('message');
